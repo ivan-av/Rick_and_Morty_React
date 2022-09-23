@@ -38,7 +38,7 @@ const Character = () => {
       })
     }
   }
-  
+
   return (
     <section className='container-fluid'>
       <BackButton />
