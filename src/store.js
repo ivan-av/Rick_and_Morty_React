@@ -5,9 +5,9 @@ import episodesReducer from './features/episodesSlice'
 import locationsReducer from './features/locationsSlice'
 
 export const store = configureStore({
-    reducer: {
-        characters: charactersReducer,
-        episodes: episodesReducer,
-        locations: locationsReducer
-    }
+  reducer: {
+    characters: charactersReducer,
+    episodes: episodesReducer,
+    locations: locationsReducer
+  }
 })

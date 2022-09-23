@@ -10,7 +10,6 @@ import { Provider } from 'react-redux'
 // React Router Dom
 import { HashRouter } from 'react-router-dom'
 
-
 import './index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))

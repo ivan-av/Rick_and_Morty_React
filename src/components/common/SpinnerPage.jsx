@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
 const SpinnerPage = () => {
-    return (
-        <div className="text-center text-primary">
-            <Spinner className="spinner-border" role="status">
-                <span className="visually-hidden">Loading...</span>
-            </Spinner>
-        </div>
-    )
+  return (
+    <div className='text-center text-primary'>
+      <Spinner className='spinner-border' role='status'>
+        <span className='visually-hidden'>Loading...</span>
+      </Spinner>
+    </div>
+  )
 }
 
 const Spinner = styled.div`

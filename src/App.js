@@ -18,20 +18,22 @@ const Episode = lazy(() => import('./components/views/Episode'))
 const Location = lazy(() => import('./components/views/Location'))
 const Character = lazy(() => import('./components/views/Character'))
 
-function App() {
+function App () {
   return (
     <MainApp>
       <NavHeader />
       <MainPage>
         <Routes>
-          <Route index
+          <Route
+            index
             element={
               <>
                 <Helmet>
                   <title>Rick and Morty | Characters</title>
-                  <meta name="description" content="Information for Rick and Morty,
+                  <meta
+                    name='description' content='Information for Rick and Morty,
                     this information was recolect for an public API, getting characters,
-                    locations and episodes"
+                    locations and episodes'
                   />
                 </Helmet>
                 <Suspense fallback={<SpinnerPage />}>
@@ -40,13 +42,15 @@ function App() {
               </>
             }
           />
-          <Route path='/characters/:characterId'
+          <Route
+            path='/characters/:characterId'
             element={
               <>
                 <Helmet>
                   <title>Rick and Morty | Character</title>
-                  <meta name="description" content="Details for a character,
-                    with episodes and locations that character has been in"
+                  <meta
+                    name='description' content='Details for a character,
+                    with episodes and locations that character has been in'
                   />
                 </Helmet>
                 <Suspense fallback={<SpinnerPage />}>
@@ -55,14 +59,16 @@ function App() {
               </>
             }
           />
-          <Route path="episodes">
-            <Route index
+          <Route path='episodes'>
+            <Route
+              index
               element={
                 <>
                   <Helmet>
                     <title>Rick and Morty | Episodes</title>
-                    <meta name="description" content="Information for episodes of Rick and Morty,
-                      this information was recolect for an public API"
+                    <meta
+                      name='description' content='Information for episodes of Rick and Morty,
+                      this information was recolect for an public API'
                     />
                   </Helmet>
                   <Suspense fallback={<SpinnerPage />}>
@@ -71,13 +77,15 @@ function App() {
                 </>
               }
             />
-            <Route path=":episodeId"
+            <Route
+              path=':episodeId'
               element={
                 <>
                   <Helmet>
                     <title>Rick and Morty | Episode</title>
-                    <meta name="description" content="Detail for episode of Rick and Morty,
-                      with characters that episode has been in"
+                    <meta
+                      name='description' content='Detail for episode of Rick and Morty,
+                      with characters that episode has been in'
                     />
                   </Helmet>
                   <Suspense fallback={<SpinnerPage />}>
@@ -87,14 +95,16 @@ function App() {
               }
             />
           </Route>
-          <Route path="locations">
-            <Route index
+          <Route path='locations'>
+            <Route
+              index
               element={
                 <>
                   <Helmet>
                     <title>Rick and Morty | Locations</title>
-                    <meta name="description" content="Information for locations of Rick and Morty,
-                      this information was recolect for an public API"
+                    <meta
+                      name='description' content='Information for locations of Rick and Morty,
+                      this information was recolect for an public API'
                     />
                   </Helmet>
                   <Suspense fallback={<SpinnerPage />}>
@@ -103,13 +113,15 @@ function App() {
                 </>
               }
             />
-            <Route path=":locationId"
+            <Route
+              path=':locationId'
               element={
                 <>
                   <Helmet>
                     <title>Rick and Morty | Location</title>
-                    <meta name="description" content="Detail for location of Rick and Morty,
-                      with characters that episode has been in"
+                    <meta
+                      name='description' content='Detail for location of Rick and Morty,
+                      with characters that episode has been in'
                     />
                   </Helmet>
                   <Suspense fallback={<SpinnerPage />}>

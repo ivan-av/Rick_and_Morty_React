@@ -11,54 +11,57 @@ import InputSearchWithDebounder from '../components/views/InputSearchWithDebound
 import GroupButtons from '../components/common/GroupButtons'
 
 const Characters = () => {
-    const characters = useSelector(state => state.characters.value)
-    const status = useSelector(state => state.characters.status)
-    const statusNext = useSelector(state => state.characters.statusNext)
-    const statusPrev = useSelector(state => state.characters.statusPrev)
-    const nextPage = useSelector(state => state.characters.nextPage)
-    const previousPage = useSelector(state => state.characters.previousPage)
-    const dispatch = useDispatch()
+  const characters = useSelector(state => state.characters.value)
+  const status = useSelector(state => state.characters.status)
+  const statusNext = useSelector(state => state.characters.statusNext)
+  const statusPrev = useSelector(state => state.characters.statusPrev)
+  const nextPage = useSelector(state => state.characters.nextPage)
+  const previousPage = useSelector(state => state.characters.previousPage)
+  const dispatch = useDispatch()
 
-    const [searcher, setSearcher] = useState('')
+  const [searcher, setSearcher] = useState('')
 
-    useEffect(() => {
-        dispatch(searchByName(searcher))
-    }, [searcher])
+  useEffect(() => {
+    dispatch(searchByName(searcher))
+  }, [searcher])
 
-    const handleNextPage = () => {
-        dispatch(getNextPage(nextPage))
-    }
-    const handlePreviousPage = () => {
-        dispatch(getPreviousPage(previousPage))
-    }
+  const handleNextPage = () => {
+    dispatch(getNextPage(nextPage))
+  }
+  const handlePreviousPage = () => {
+    dispatch(getPreviousPage(previousPage))
+  }
 
-    return (
-        <div className="container-fluid">
-            <InputSearchWithDebounder namePage="Characters"
-                setSearcher={setSearcher}
-            />
-            <GroupButtons>
-                <PreviousPageButton previousPage={previousPage}
-                    isLoading={statusPrev === 'loading'}
-                    handlePreviousPage={handlePreviousPage}
-                />
-                <NextPageButton nextPage={nextPage}
-                    isLoading={statusNext === 'loading'}
-                    handleNextPage={handleNextPage}
-                />
-            </GroupButtons>
-            {status === 'loading' && <div>Loading...</div>}
-            <ComponentGrouper>
-                {characters &&
+  return (
+    <div className='container-fluid'>
+      <InputSearchWithDebounder
+        namePage='Characters'
+        setSearcher={setSearcher}
+      />
+      <GroupButtons>
+        <PreviousPageButton
+          previousPage={previousPage}
+          isLoading={statusPrev === 'loading'}
+          handlePreviousPage={handlePreviousPage}
+        />
+        <NextPageButton
+          nextPage={nextPage}
+          isLoading={statusNext === 'loading'}
+          handleNextPage={handleNextPage}
+        />
+      </GroupButtons>
+      {status === 'loading' && <div>Loading...</div>}
+      <ComponentGrouper>
+        {characters &&
                     characters.map(character => (
-                        <CharacterCard key={character.id}
-                            character={character}
-                        />
-                    ))
-                }
-            </ComponentGrouper>
-        </div>
-    )
+                      <CharacterCard
+                        key={character.id}
+                        character={character}
+                      />
+                    ))}
+      </ComponentGrouper>
+    </div>
+  )
 }
 
 export default Characters

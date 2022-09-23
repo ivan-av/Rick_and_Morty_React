@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 const ComponentGrouper = ({ children }) => {
-    return (
-        <Grouper className="pb-4">
-            {children}
-        </Grouper>
-    )
+  return (
+    <Grouper className='pb-4'>
+      {children}
+    </Grouper>
+  )
 }
 
 const Grouper = styled.div`

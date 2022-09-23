@@ -2,18 +2,17 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 const BaseCard = ({ children, title, elementTop, link }) => {
-    return (
-        <Card className="card bg-transparent">
-            {elementTop}
-            <div className="card-body">
-                <h5 className="card-title">{title}</h5>
-                {children}
-                {link &&
-                    <Link to={link.toString()} className="btn btn-primary">More Details</Link>
-                }
-            </div>
-        </Card>
-    )
+  return (
+    <Card className='card bg-transparent'>
+      {elementTop}
+      <div className='card-body'>
+        <h5 className='card-title'>{title}</h5>
+        {children}
+        {link &&
+          <Link to={link.toString()} className='btn btn-primary'>More Details</Link>}
+      </div>
+    </Card>
+  )
 }
 
 const Card = styled.article`
