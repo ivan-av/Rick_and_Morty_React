@@ -41,4 +41,4 @@ npm start
 - styled-components
 
 ---
-## Deploy:
+## Deploy: https://rickmorty-react-idac.netlify.app/
