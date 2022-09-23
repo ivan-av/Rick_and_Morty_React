@@ -21,10 +21,10 @@ const Location = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    dispatch(getLocationById(locationId))
+    dispatch(getLocationById(locationId)) // eslint-disable-next-line
   }, [])
   useEffect(() => {
-    getAllCharacters()
+    getAllCharacters() // eslint-disable-next-line
   }, [location])
 
   const getAllCharacters = async () => {

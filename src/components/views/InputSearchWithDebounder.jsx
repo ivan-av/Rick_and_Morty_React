@@ -8,13 +8,13 @@ const InputSearchWithDebounder = ({ namePage, setSearcher }) => {
     setSearcher(event.target.value)
   }
   const handleDebouncerChanges = useMemo(() =>
-    debounce(handleChanges, 1000)
+    debounce(handleChanges, 1000) // eslint-disable-next-line
   , [])
 
   useEffect(() => {
     return () => {
-      handleDebouncerChanges.cancel()
-    }
+      handleDebouncerChanges.cancel() 
+    } // eslint-disable-next-line
   }, [])
 
   return (

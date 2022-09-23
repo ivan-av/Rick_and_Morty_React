@@ -21,10 +21,10 @@ const Character = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    dispatch(getCharacterById(characterId))
+    dispatch(getCharacterById(characterId)) // eslint-disable-next-line
   }, [])
   useEffect(() => {
-    getAllEpisodes()
+    getAllEpisodes() // eslint-disable-next-line
   }, [character])
 
   const getAllEpisodes = async () => {

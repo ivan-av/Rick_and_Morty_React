@@ -22,7 +22,7 @@ const Characters = () => {
   const [searcher, setSearcher] = useState('')
 
   useEffect(() => {
-    dispatch(searchByName(searcher))
+    dispatch(searchByName(searcher)) // eslint-disable-next-line
   }, [searcher])
 
   const handleNextPage = () => {
