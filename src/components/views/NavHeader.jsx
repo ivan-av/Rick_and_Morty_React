@@ -8,7 +8,7 @@ const NavHeader = () => {
   return (
     <Nav className='navbar navbar-expand-lg sticky-top'>
       <div className='container-fluid'>
-        <NormalLink className='navbar-brand' to='/'>Rick and Morty</NormalLink>
+        <NormalLink className='navbar-brand' to='/'>WIKI | RICK & MORTY</NormalLink>
         <button className='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation'>
           <Icon className='bi bi-list' />
         </button>
@@ -36,24 +36,33 @@ const NavHeader = () => {
 }
 
 const Nav = styled.nav`
-  border-bottom: 1px solid var(--border-primary);
+  // border-bottom: 1px solid var(--border-primary);
+  box-shadow: 2px 2px 2px rgb(0,0,0,0.1);
   color: var(--text-primary);
-  background-color: var(--bg-primary);
+  background-color: #f8f7a8;
 `
 const NavLinkPersonalized = styled(NavLink)`
-  color: var(--text-primary);
+  color: black;
+  margin-right: 40px;
+  font-size: 16px;
+  font-weight:600;
   &.active {
     color: var(--text-secondary);
-    border-bottom: 1px solid var(--text-secondary);
+    // border-bottom: 1px solid var(--text-secondary);
   }
   &:hover {
     color: var(--text-secondary);
   }
 `
 const NormalLink = styled(Link)`
-  color: var(--text-primary);
+  color: #0d6efd;
+  font-size: 20px;
+  font-weight:600;
+  font-style:cursive;
+  padding-left:30px;
   &:hover {
-    color: var(--text-primary);
+    transition: 0.3s;
+    color: coral;
   }
 `
 

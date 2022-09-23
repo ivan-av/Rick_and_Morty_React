@@ -12,14 +12,14 @@ const CharacterCard = ({ character }) => {
       link={'/characters/' + character.id}
     >
       <p className='card-text'>Status: <Span>{character.status}</Span></p>
-      <p className='card-text'>Especie: <Span>{character.species}</Span></p>
+      <p className='card-text'>Species: <Span>{character.species}</Span></p>
       <p className='card-text'>Gender: <Span>{character.gender}</Span></p>
     </BaseCard>
   )
 }
 
 const Span = styled.span`
-  color: var( --text-secondary)
+  color: var( --text-secondary);
 `
 
 export default CharacterCard

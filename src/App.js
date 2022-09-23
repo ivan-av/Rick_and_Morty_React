@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
 
 import NavHeader from './components/views/NavHeader'
+import FootNav from './components/views/FootNav'
 import SpinnerPage from './components/common/SpinnerPage'
 
 import 'bootstrap'
@@ -133,6 +134,7 @@ function App () {
           </Route>
         </Routes>
       </MainPage>
+      <FootNav />
     </MainApp>
   )
 }

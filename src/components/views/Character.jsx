@@ -9,6 +9,9 @@ import BackButton from '../buttons/BackButton'
 import ComponentGrouper from '../common/ComponentGrouper'
 import EpisodeCard from '../cards/EpisodeCard'
 
+import styled from 'styled-components'
+
+
 const Character = () => {
   const [isLoadingEpisodes, setIsLoadingEpisodes] = useState(false)
   const [episodes, setEpisodes] = useState([])
@@ -42,6 +45,7 @@ const Character = () => {
       <div className='text-center'>
         {isLoading === 'loading' && <div>Loading...</div>}
         <h1>{character?.name}</h1>
+        <Img src={character.image} className='card-img-top' alt={character.name} />
         <p className='pt-4 mt-2'>{character?.status}</p>
         <p>{character?.species}</p>
         <p>{character?.gender}</p>
@@ -62,5 +66,10 @@ const Character = () => {
     </section>
   )
 }
+
+const Img = styled.img`
+  width:35vh;
+  border-radius:25%
+`
 
 export default Character
