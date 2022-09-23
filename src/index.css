@@ -1,3 +1,13 @@
+:root {
+  --text-primary: #000000;
+  --text-secondary: #6d6d6d;
+  --bg-primary: #fefefe;
+  --bg-secondary: #37474f;
+  --border-primary: #757575;
+}
+* {
+  transition: background-color linear 0.3s, color linear 0.05s;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
