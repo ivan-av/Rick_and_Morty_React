@@ -18,6 +18,7 @@ const CharacterCard = ({ character }) => {
   )
 }
 
+// Styles
 const Span = styled.span`
   color: var( --text-secondary);
 `

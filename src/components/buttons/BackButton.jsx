@@ -11,7 +11,7 @@ const BackButton = () => {
   return (
     <button className='btn btn-primary' onClick={handleBack}>
       <Icon className='bi bi-caret-left-fill' />
-      Regresar
+      Return
     </button>
   )
 }

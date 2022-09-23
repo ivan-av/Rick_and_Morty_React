@@ -38,6 +38,7 @@ const Character = () => {
       })
     }
   }
+  
   return (
     <section className='container-fluid'>
       <BackButton />
@@ -66,6 +67,7 @@ const Character = () => {
   )
 }
 
+// Styles
 const Img = styled.img`
   width:35vh;
   border-radius:25%

@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
+// Base structure of the cards
 const BaseCard = ({ children, title, elementTop, link }) => {
   return (
     <Card className='card'>
@@ -15,6 +16,7 @@ const BaseCard = ({ children, title, elementTop, link }) => {
   )
 }
 
+// Styles
 const Card = styled.article`
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
   border: 1px solid transparent;

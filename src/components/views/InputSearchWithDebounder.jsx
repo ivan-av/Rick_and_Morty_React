@@ -21,7 +21,7 @@ const InputSearchWithDebounder = ({ namePage, setSearcher }) => {
     <div className='container d-flex align-items-center justify-content-center mb-4'>
       <Icon className='bi bi-search' withSpace />
       <label htmlFor='search' className='visually-hidden-focusable'>
-        Buscar:
+        Search:
       </label>
       <input
         type='text'

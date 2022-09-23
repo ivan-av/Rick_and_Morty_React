@@ -8,6 +8,7 @@ const FootNav = () => {
   )
 }
 
+// Styles
 const Foot = styled.nav`
   border-top: 1px solid var(--border-primary);
   box-shadow: -2px -2px 2px rgb(0,0,0,0.2);

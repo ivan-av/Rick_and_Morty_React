@@ -13,6 +13,7 @@ const EpisodeCard = ({ episode }) => {
   )
 }
 
+// Styles
 const Span = styled.span`
   color: var( --text-secondary)
 `

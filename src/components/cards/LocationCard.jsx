@@ -13,6 +13,7 @@ const LocationCard = ({ location }) => {
   )
 }
 
+// Styles
 const Span = styled.span`
   color: var( --text-secondary)
 `

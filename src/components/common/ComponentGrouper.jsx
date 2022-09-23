@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 
+// Component that allows configurate the distribution of the cards
 const ComponentGrouper = ({ children }) => {
   return (
     <Grouper className='pb-4'>
@@ -8,6 +9,7 @@ const ComponentGrouper = ({ children }) => {
   )
 }
 
+// Styles
 const Grouper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

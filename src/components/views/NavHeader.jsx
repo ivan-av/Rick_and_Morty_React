@@ -34,6 +34,7 @@ const NavHeader = () => {
   )
 }
 
+// Styles
 const Nav = styled.nav`
   // border-bottom: 1px solid var(--border-primary);
   box-shadow: 2px 2px 2px  #5296f8b3;
