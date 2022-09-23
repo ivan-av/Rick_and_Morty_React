@@ -13,7 +13,7 @@ const InputSearchWithDebounder = ({ namePage, setSearcher }) => {
 
   useEffect(() => {
     return () => {
-      handleDebouncerChanges.cancel() 
+      handleDebouncerChanges.cancel()
     } // eslint-disable-next-line
   }, [])
 

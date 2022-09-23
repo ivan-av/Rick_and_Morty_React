@@ -11,7 +11,6 @@ import EpisodeCard from '../cards/EpisodeCard'
 
 import styled from 'styled-components'
 
-
 const Character = () => {
   const [isLoadingEpisodes, setIsLoadingEpisodes] = useState(false)
   const [episodes, setEpisodes] = useState([])

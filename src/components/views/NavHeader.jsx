@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import { NavLink, Link } from 'react-router-dom'
 
 import Icon from '../common/Icon'
-// import SwitchColor from './SwitchColor'
 
 const NavHeader = () => {
   return (
@@ -37,7 +36,7 @@ const NavHeader = () => {
 
 const Nav = styled.nav`
   // border-bottom: 1px solid var(--border-primary);
-  box-shadow: 2px 2px 2px rgb(0,0,0,0.1);
+  box-shadow: 2px 2px 2px  #5296f8b3;
   color: var(--text-primary);
   background-color: #f8f7a8;
 `
@@ -59,6 +58,7 @@ const NormalLink = styled(Link)`
   font-size: 20px;
   font-weight:600;
   font-style:cursive;
+  text-shadow: 2px 2px 2px rgb(0,0,0,0.2);
   padding-left:30px;
   &:hover {
     transition: 0.3s;

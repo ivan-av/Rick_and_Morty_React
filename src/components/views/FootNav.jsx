@@ -3,8 +3,7 @@ import styled from 'styled-components'
 const FootNav = () => {
   return (
     <Foot className='navbar navbar-expand-lg'>
-      <div className='container-fluid'>
-      </div>
+      <div className='container-fluid' />
     </Foot>
   )
 }
